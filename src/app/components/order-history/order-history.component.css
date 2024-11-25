@@ -1,0 +1,40 @@
+/* Order History Styles */
+.order-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.order-item p {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.order-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.order-item li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.order-item p:last-child {
+  font-weight: bold;
+}
+
+ng-template {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}

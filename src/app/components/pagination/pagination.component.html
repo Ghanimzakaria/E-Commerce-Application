@@ -1,0 +1,5 @@
+<nav *ngIf="totalPages > 1">
+  <button (click)="changePage(currentPage - 1)" [disabled]="currentPage === 1">Précédent</button>
+  <span>Page {{ currentPage }} sur {{ totalPages }}</span>
+  <button (click)="changePage(currentPage + 1)" [disabled]="currentPage === totalPages">Suivant</button>
+</nav>

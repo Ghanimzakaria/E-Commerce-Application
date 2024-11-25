@@ -1,0 +1,218 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "description": "High-quality wireless headphones with noise cancellation.",
+      "price": 149.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/1a73e8/FFFFFF?text=Headphones"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone",
+      "description": "Latest 5G smartphone with a stunning display.",
+      "price": 799.99,
+      "category": "Phones",
+      "image": "https://via.placeholder.com/300/34a853/FFFFFF?text=Smartphone"
+    },
+    {
+      "id": 3,
+      "name": "Bluetooth Speaker",
+      "description": "Portable speaker with powerful bass and long battery life.",
+      "price": 59.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/ea4335/FFFFFF?text=Speaker"
+    },
+    {
+      "id": 4,
+      "name": "Gaming Laptop",
+      "description": "High-performance laptop designed for gaming.",
+      "price": 1299.99,
+      "category": "Laptop",
+      "image": "https://via.placeholder.com/300/ffa726/FFFFFF?text=Laptop"
+    },
+    {
+      "id": 5,
+      "name": "Smartwatch",
+      "description": "Stay connected and track your fitness goals.",
+      "price": 199.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/9c27b0/FFFFFF?text=Smartwatch"
+    },
+    {
+      "id": 6,
+      "name": "4K TV",
+      "description": "Ultra HD smart TV with stunning visuals.",
+      "price": 599.99,
+      "category": "TV",
+      "image": "https://via.placeholder.com/300/03a9f4/FFFFFF?text=4K+TV"
+    },
+    {
+      "id": 7,
+      "name": "Wireless Mouse",
+      "description": "Ergonomic mouse with long battery life.",
+      "price": 25.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/8bc34a/FFFFFF?text=Mouse"
+    },
+    {
+      "id": 8,
+      "name": "Mechanical Keyboard",
+      "description": "Backlit keyboard with customizable keys.",
+      "price": 89.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/607d8b/FFFFFF?text=Keyboard"
+    },
+    {
+      "id": 9,
+      "name": "Drone",
+      "description": "Capture stunning aerial photos and videos.",
+      "price": 349.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/ff5722/FFFFFF?text=Drone"
+    },
+    {
+      "id": 10,
+      "name": "Digital Camera",
+      "description": "Professional camera for photography enthusiasts.",
+      "price": 699.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/c2185b/FFFFFF?text=Camera"
+    },
+    {
+      "id": 11,
+      "name": "Tablet",
+      "description": "Sleek tablet perfect for entertainment and work.",
+      "price": 329.99,
+      "category": "Tablet",
+      "image": "https://via.placeholder.com/300/009688/FFFFFF?text=Tablet"
+    },
+    {
+      "id": 12,
+      "name": "Action Camera",
+      "description": "Compact camera for capturing action-packed moments.",
+      "price": 199.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/3f51b5/FFFFFF?text=Action+Camera"
+    },
+    {
+      "id": 13,
+      "name": "Smart Thermostat",
+      "description": "Energy-efficient thermostat with remote control.",
+      "price": 149.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/ffeb3b/000000?text=Thermostat"
+    },
+    {
+      "id": 14,
+      "name": "E-Reader",
+      "description": "Lightweight e-reader with a glare-free display.",
+      "price": 119.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/673ab7/FFFFFF?text=E-Reader"
+    },
+    {
+      "id": 15,
+      "name": "Power Bank",
+      "description": "Portable charger with fast charging support.",
+      "price": 39.99,
+      "category": "accessories",
+      "image": "https://via.placeholder.com/300/795548/FFFFFF?text=Power+Bank"
+    }
+  ],
+  "cart": [
+    {
+      "id": "de8e",
+      "productId": 1,
+      "quantity": 1
+    }
+  ],
+  "categories": [
+    "Phones",
+    "accessories",
+    "TV",
+    "Tablet",
+    "Laptop"
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1",
+      "name": "User One"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2",
+      "name": "User Two"
+    }
+  ],
+  "orders": [
+    {
+      "id": "e41f",
+      "userId": 1,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 299.98,
+      "status": "completed",
+      "orderDate": "2024-11-25T15:55:00.900Z"
+    },
+    {
+      "id": "12b5",
+      "userId": 1,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        },
+        {
+          "productId": 2,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 949.98,
+      "status": "completed",
+      "orderDate": "2024-11-25T15:56:06.388Z"
+    },
+    {
+      "id": "1a21",
+      "userId": 2,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 149.99,
+      "status": "completed",
+      "orderDate": "2024-11-25T16:01:25.712Z"
+    },
+    {
+      "id": "7372",
+      "userId": 1,
+      "products": [
+        {
+          "productId": 1,
+          "quantity": 4
+        },
+        {
+          "productId": 4,
+          "quantity": 1
+        },
+        {
+          "productId": 3,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 1959.94,
+      "status": "completed",
+      "orderDate": "2024-11-25T16:13:21.414Z"
+    }
+  ]
+}

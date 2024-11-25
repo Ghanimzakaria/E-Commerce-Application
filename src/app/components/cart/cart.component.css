@@ -1,0 +1,143 @@
+/* General Container Styles */
+h2 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Cart Items */
+.cart-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Product Image */
+.product-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Item Details */
+.item-details {
+  flex: 1;
+}
+
+.cart-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cart-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Quantity Control */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.quantity-control button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background 0.3s ease;
+}
+
+.quantity-control button:disabled {
+  background: #ddd;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.quantity-control button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.quantity-control span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Remove Button */
+.cart-item button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.cart-item button:hover {
+  background: #c82333;
+}
+
+/* Total Price */
+h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+}
+
+ng-template p {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+  margin-top: 30px;
+}
+
+
+.confirm-order-btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.confirm-order-btn:hover {
+  background-color: #45a049;
+}

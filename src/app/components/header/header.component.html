@@ -1,0 +1,12 @@
+<nav class="navbar">
+  <div class="logo">
+    <a routerLink="/">E-Shop</a>
+  </div>
+  <div class="nav-links">
+    <a routerLink="/" class="nav-link">Home</a>
+    <a routerLink="/cart" class="nav-link" *ngIf="authService.isLoggedIn()">Cart</a>
+    <a routerLink="/login" class="nav-link" *ngIf="!authService.isLoggedIn()">Login</a>
+    <a routerLink="/order-history" *ngIf="authService.isLoggedIn()">Order History</a>
+    <button (click)="logout()" class="logout-btn" *ngIf="authService.isLoggedIn()">Logout</button>
+  </div>
+</nav>

@@ -1,0 +1,30 @@
+<h2>Mon panier</h2>
+
+<div *ngIf="cartItems.length > 0; else emptyCart">
+  <div *ngFor="let item of cartItems" class="cart-item">
+    <h4>{{ item.name }}</h4>
+    <p>Prix : {{ item.price | currency:'EUR' }}</p>
+
+    <!-- Display quantity and control buttons -->
+    <div class="quantity-control">
+      <button (click)="increaseQuantity(item)">+</button>
+      <span>{{ item.quantity }}</span>
+      <button (click)="decreaseQuantity(item)" [disabled]="item.quantity <= 1">-</button>
+    </div>
+
+    <!-- Display remove button when quantity is 1 -->
+    <div *ngIf="item.quantity === 1">
+      <button (click)="removeFromCart(item)">Supprimer</button>
+    </div>
+
+    <p>Sous-total : {{ item.price * item.quantity | currency:'EUR' }}</p>
+  </div>
+  <h3>Total : {{ totalPrice | currency:'EUR' }}</h3>
+
+  <!-- Confirm order button -->
+  <button class="confirm-order-btn" (click)="confirmOrder()">Confirmer la commande</button>
+</div>
+
+<ng-template #emptyCart>
+  <p>Votre panier est vide.</p>
+</ng-template>

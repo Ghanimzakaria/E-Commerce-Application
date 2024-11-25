@@ -1,0 +1,30 @@
+<div>
+  <label for="category-filter">Filtrer par catégorie :</label>
+  <select id="category-filter" [(ngModel)]="selectedCategory" (change)="filterProducts()">
+    <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+  </select>
+</div>
+
+<div *ngIf="paginatedProducts.length > 0; else noProducts">
+  <div *ngFor="let product of paginatedProducts" class="product-item">
+    <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
+    <div class="product-details">
+      <h3>{{ product.name }}</h3>
+      <p>Catégorie : {{ product.category }}</p>
+      <p>Prix : {{ product.price | currency:'EUR' }}</p>
+      <p>Stock : {{ product.stock }}</p>
+      <button (click)="addToCart(product.id)">Ajouter au panier</button>
+    </div>
+  </div>
+</div>
+
+<app-pagination
+  [currentPage]="currentPage"
+  [totalItems]="filteredProducts.length"
+  [itemsPerPage]="productsPerPage"
+  (pageChange)="onPageChange($event)">
+</app-pagination>
+
+<ng-template #noProducts>
+  <p>Aucun produit disponible pour cette catégorie.</p>
+</ng-template>

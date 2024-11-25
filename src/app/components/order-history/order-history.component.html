@@ -1,0 +1,19 @@
+<h2>Historique des commandes</h2>
+
+<div *ngIf="orders.length > 0; else noOrders">
+  <div *ngFor="let order of orders; let i = index" class="order-item">
+    <h4>Order {{ i+1}}</h4>
+    <p>Date: {{ order.orderDate | date:'short' }}</p>
+    <p>Status: {{ order.status }}</p>
+    <ul>
+      <li *ngFor="let product of order.products">
+        Product ID: {{ product.productId }} | Quantity: {{ product.quantity }}
+      </li>
+    </ul>
+    <p>Total: {{ order.totalPrice | currency:'EUR' }}</p>
+  </div>
+</div>
+
+<ng-template #noOrders>
+  <p>Vous n'avez pas encore passé de commandes.</p>
+</ng-template>
