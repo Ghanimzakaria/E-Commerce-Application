@@ -30,9 +30,7 @@ This is a full-fledged **E-Commerce application** built with Angular, providing 
       /cart.service  -- Cart management service
       /order-history.service -- Order history management
       /product.service -- Product data handling service
-    /models
-      /product.model.ts -- Product model structure
-      /order.model.ts   -- Order model structure
+    
 ```
 
 ## Installation
@@ -132,6 +130,3 @@ You can modify `db.json` to add/remove products or orders as needed.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-This README provides a good overview of the project, its setup, and usage. You can customize it further as needed. Let me know if you need anything else!
